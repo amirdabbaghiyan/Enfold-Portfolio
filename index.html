@@ -94,7 +94,8 @@
         <div id="about">
             <!-- about item 01 -->
             <section class="about-item-01">
-                <div class="about-item-01-image"></div>
+                
+                <img src="images/profile.jpg" alt="profile" class="about-item-01-image show-element">
 
                 <h2 class="about-item-01-title title">This is me. Designer by day <i class="title-icon">&</i> developer by night. I never sleep… almost.</h2>
 
@@ -102,57 +103,61 @@
 
                 <div class="about-item-01-inform">
                     <div class="inform-item">
-                        <span class="inform-item-number">112</span>successful projects</div>
-
+                        <span id="projects" class="inform-item-number">112</span>
+                        <span>successful projects</span>
+                    </div>
                     <div class="inform-item">
-                        <span class="inform-item-number">3265</span>days of experience</div>
-
+                        <span id="experience" class="inform-item-number">3265</span>
+                        <span>days of experience</span>
+                    </div>
                     <div class="inform-item">
-                        <span class="inform-item-number">47</span>happy clients</div>
+                        <span id="clients" class="inform-item-number">47</span>
+                        <span>happy clients</span>
+                    </div>
                 </div>
             </section>
 
             <!-- about item 02 -->
             <section class="about-item-02">
                 <h2 class="about-item-02-title title">What my clients say about me and my work</h2>
-                <!-- members -->
-                <div class="members">
-                    <!-- member item 01 -->
-                    <div class="member member-item-01">
-                        <p>We are very pleased with our new brand identity and the way Enrique conducts his business. It has been a great experience working with him and it’s already certain that we will hire him again.</p>
+                <!-- slider -->
+                <div class="about-comments slider">
+                    <!-- slider item-01 -->
+                    <div class="about-comment slide-item show-slide">
+                        <blockquote>We are very pleased with our new brand identity and the way Enrique conducts his business. It has been a great experience working with him and it`s already certain that we will hire him again.</blockquote>
     
-                        <div class="profile">
-                            <div class="image"></div>
-                            
-                            <div class="biography">
-                                <h3>Sara Andrews</h3>
+                        <!-- profile -->
+                        <figure class="profile">
+                            <img src="images/profile-girl.jpg" alt="girl" class="profile-img show-element">
 
-                                <p>
-                                    <span>Designer</span>
-                                    - 
-                                    <a href="">Sandrew Inc.</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- member item 02 -->
-                    <div class="member member-item-02">
-                        <p>member Enrique is awesome to work with. Incredibly talented, easy to communicate with, responsive with next iterations, and beautiful work. Highly recommended!</p>
-    
-                        <div class="profile">
-                            <div class="images"></div>
+                            <figcaption>
+                                <cite class="profile-name">Sara Andrews</cite>
                             
-                            <div class="info">
-                                <h3>Frank Miller</h3>
-    
-                                <p>
-                                    <span>ceo</span>
-                                    - 
-                                    <a href="">Millermedia</a>
-                                </p>
-                            </div>
-                        </div>
+                                <p><span class="profile-profession">Designer</span> - <a href="">Sander Inc</a></p>
+                            </figcaption>
+                        </figure>
                     </div>
+    
+                    <!-- slider item-02 -->
+                    <div class="about-comment slide-item">
+                        <blockquote>Enrique is awesome to work with. Incredibly talented, easy to communicate with, responsive with next iterations, and beautiful work. Highly recommended!</blockquote>
+    
+                        <!-- profile -->
+                        <figure class="profile">
+                            <img src="images/profile-boy.jpg" alt="Boy" class="profile-img show-element">
+                        
+                            <figcaption>
+                                <cite class="profile-name">Frank Miller</cite>
+    
+                                <p><span class="profile-profession">CEO</span> - <a href="">Millermedia</a></p>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                    
+                    <!-- slider btns -->
+                    <button class="btn-prev icon-left"></button>
+
+                    <button class="btn-next icon-right"></button>
                 </div>
 
                 <div class="about-item-02-logos">
@@ -246,7 +251,7 @@
 
                 <textarea class="form-item" name="" id="" cols="30" rows="10" placeholder="Message*" required></textarea>
 
-                <input type="submit" class="form-item" value="Submit">
+                <input type="submit" class="form-item submit" value="Submit">
             </form>
         </section>   
 
@@ -255,9 +260,9 @@
             <h2 class="social-media-title title">Or follow me on Dribbble, Facebook or Twitter</h2>
 
             <div class="social-media-icons">         
-                <a href="https://m.facebook.com" class="social-media-icon icon-facebook" target="_blank"></a>
-                <a href="https://dribbble.com" class="social-media-icon icon-dribbble" target="_blank"></a>
-                <a href="https://www.Twitter.com" class="social-media-icon icon-twitter" target="_blank"></a>
+                <a href="https://m.facebook.com" class="social-media-icon icon-facebook show-element" target="_blank"></a>
+                <a href="https://dribbble.com" class="social-media-icon icon-dribbble show-element" target="_blank"></a>
+                <a href="https://www.Twitter.com" class="social-media-icon icon-twitter show-element" target="_blank"></a>
             </div>
         </section>
     </main>
