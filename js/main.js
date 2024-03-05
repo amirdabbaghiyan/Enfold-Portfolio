@@ -8,7 +8,7 @@ const homeEl = document.querySelector('.hero');
 // menu item light
 const menuItemsLink = document.querySelectorAll('.menu-item-link');
 const parts = document.querySelectorAll('.part');
-// // show menu
+// show menu
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
 const menuEl = document.querySelector('.menu');
 // show element by rotate
@@ -22,7 +22,7 @@ const informNumEls = document.querySelectorAll('.inform-item-number');
 const slideItems = document.querySelectorAll('.slide-item');
 const nextBtn = document.querySelector('.btn-next');
 const prevBtn = document.querySelector('.btn-prev');
-// // form
+// form
 const formEl = document.querySelector('form');
 const formItems = document.querySelectorAll('.form-item:not(.submit)');
 const formSubmit = document.querySelector('.submit');
