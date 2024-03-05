@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- site loader -->
+    <div class="site-loader">
+        <img src="images/logo-onepage.png" alt="logo onepage" class="loader-img" title="loading">
+        <div class="loader"></div>
+    </div>
+    
     <!-- header -->
-    <header id="header">
+    <header id="header" class="header">
         <!-- navbar -->
         <nav class="navbar">
             <!-- website logo -->
@@ -21,19 +27,19 @@
             <!-- menu -->
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#home">home</a>
+                    <a href="#home" class="menu-item-link">home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#portfolio">portfolio</a>
+                    <a href="#portfolio" class="menu-item-link">portfolio</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#about">about</a>
+                    <a href="#about" class="menu-item-link">about</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#services">services</a>
+                    <a href="#services" class="menu-item-link">services</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#contact">contact</a>
+                    <a href="#contact" class="menu-item-link">contact</a>
                 </li>
             </ul>
 
@@ -45,30 +51,32 @@
     <!-- main -->
     <main id="main">
         <!-- section hero -->
-        <section id="home" class="hero">
-            <h1 class="hero-title">
-                welcome! <br> i am enrique fold
-            </h1>
-
-            <p class="hero-content">
-               I am a New York based developer specialized in branding and web design.<br>Take a look at my work and if you like it I would love to hear from you!
-            </p>
-
-            <div>
-                <a href="#about" class="hero-btn btn-get-about">learn more</a>
-
-                <a href="#contact" class="hero-btn btn-get-contact">get in touch</a>
-            </div>
-
+        <div id="home" class="hero part">
+            <section class="hero-container">
+                <h1 class="hero-title">
+                    welcome! <br> i am enrique fold
+                </h1>
+    
+                <p class="hero-content">
+                   I am a New York based developer specialized in branding and web design.<br>Take a look at my work and if you like it I would love to hear from you!
+                </p>
+    
+                <div>
+                    <a href="#about" class="hero-btn btn-get-about">learn more</a>
+    
+                    <a href="#contact" class="hero-btn btn-get-contact">get in touch</a>
+                </div>
+    
+            </section>
             <!-- scroll down-->
             <a href="#portfolio" class="scroll-down icon-down"></a>
-        </section>
+        </div>
 
         <!-- portfolio -->
-        <section id="portfolio">
+        <section id="portfolio" class="part">
             <h2 class="portfolio-title title">Recent projects I have designed <i class="title-icon">&</i> developed. Would love to add yours too…</h2>
 
-            <nav class="portfolio-gallery">
+            <nav class="gallery">
                 <a href="images/portfolio-01.png" class="gallery-item">
                     <img src="images/portfolio-01.png" alt="portfolio-01" class="gallery-item-img">
                 </a>
@@ -91,7 +99,7 @@
         </section>
 
         <!-- about -->
-        <div id="about">
+        <div id="about" class="part">
             <!-- about item 01 -->
             <section class="about-item-01">
                 
@@ -172,7 +180,7 @@
         </div>
 
         <!-- services -->
-        <section id="services">
+        <section id="services" class="part">
             <h2 class="services-title title">Here is a list of things I can do for you</h2>
 
             <div class="services-menu">
@@ -240,7 +248,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact part">
             <h2 class="contact-title title">Do you like my work? Want to get in touch? Use the form below!
             </h2>
 
