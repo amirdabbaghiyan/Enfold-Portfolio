@@ -16,30 +16,30 @@
         <img src="images/logo-onepage.png" alt="logo onepage" class="loader-img" title="loading">
         <div class="loader"></div>
     </div>
-    
+
     <!-- header -->
     <header id="header" class="header">
         <!-- navbar -->
         <nav class="navbar">
             <!-- website logo -->
-            <a href="Project001.html" class="website-logo"></a>
+            <a href="index.html" class="website-logo"></a>
 
             <!-- menu -->
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#home" class="menu-item-link">home</a>
+                    <a href="#home" class="menu-link">home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#portfolio" class="menu-item-link">portfolio</a>
+                    <a href="#portfolio" class="menu-link">portfolio</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#about" class="menu-item-link">about</a>
+                    <a href="#about" class="menu-link">about</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#services" class="menu-item-link">services</a>
+                    <a href="#services" class="menu-link">services</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#contact" class="menu-item-link">contact</a>
+                    <a href="#contact" class="menu-link">contact</a>
                 </li>
             </ul>
 
@@ -50,32 +50,35 @@
     
     <!-- main -->
     <main id="main">
-        <!-- section hero -->
+        <!-- hero -->
         <div id="home" class="hero part">
-            <section class="hero-container">
+            <section class="container container-sm">
+                <!-- hero content -->
                 <h1 class="hero-title">
-                    welcome! <br> i am enrique fold
+                    welcome!<br>i am enrique fold
                 </h1>
-    
+
                 <p class="hero-content">
                    I am a New York based developer specialized in branding and web design.<br>Take a look at my work and if you like it I would love to hear from you!
                 </p>
     
-                <div>
-                    <a href="#about" class="hero-btn btn-get-about">learn more</a>
+                <div class="hero-btn">
+                    <a href="#about" class="btn btn-secondary">learn more</a>
     
-                    <a href="#contact" class="hero-btn btn-get-contact">get in touch</a>
+                    <a href="#contact" class="btn btn-primary">get in touch</a>
                 </div>
-    
             </section>
             <!-- scroll down-->
             <a href="#portfolio" class="scroll-down icon-down"></a>
         </div>
 
         <!-- portfolio -->
-        <section id="portfolio" class="part">
-            <h2 class="portfolio-title title">Recent projects I have designed <i class="title-icon">&</i> developed. Would love to add yours too…</h2>
+        <div id="portfolio" class="part">
+            <section class="container container-sm">
+                <h2 class="title">Recent projects I have designed <i class="title-icon">&</i> developed. Would love to add yours too…</h2>
+            </section>
 
+            <!-- gallery -->
             <nav class="gallery">
                 <a href="images/portfolio-01.png" class="gallery-item">
                     <img src="images/portfolio-01.png" alt="portfolio-01" class="gallery-item-img">
@@ -96,183 +99,210 @@
                     <img src="images/portfolio-06.png" alt="portfolio-06" class="gallery-item-img">
                 </a>
             </nav>
-        </section>
+        </div>
 
         <!-- about -->
         <div id="about" class="part">
             <!-- about item 01 -->
-            <section class="about-item-01">
-                
-                <img src="images/profile.jpg" alt="profile" class="about-item-01-image show-element">
-
-                <h2 class="about-item-01-title title">This is me. Designer by day <i class="title-icon">&</i> developer by night. I never sleep… almost.</h2>
-
-                <p class="about-item-01-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis section-urient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-
-                <div class="about-item-01-inform">
-                    <div class="inform-item">
-                        <span id="projects" class="inform-item-number">112</span>
-                        <span>successful projects</span>
+            <div class="about-item-01">
+                <section class="container container-sm">
+                    <img src="images/profile.jpg" alt="profile" class="about-profile show-element">
+    
+                    <h2 class="title subline">This is me. Designer by day <i class="title-icon">&</i> developer by night. I never sleep… almost.</h2>
+    
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis section-urient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <!-- inform -->
+                    <div class="about-inform">
+                        <div class="inform-item">
+                            <span id="projects" class="inform-number">112</span>
+                            <span>successful projects</span>
+                        </div>
+                        <div class="inform-item">
+                            <span id="experience" class="inform-number">3265</span>
+                            <span>days of experience</span>
+                        </div>
+                        <div class="inform-item">
+                            <span id="clients" class="inform-number">47</span>
+                            <span>happy clients</span>
+                        </div>
                     </div>
-                    <div class="inform-item">
-                        <span id="experience" class="inform-item-number">3265</span>
-                        <span>days of experience</span>
-                    </div>
-                    <div class="inform-item">
-                        <span id="clients" class="inform-item-number">47</span>
-                        <span>happy clients</span>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- about item 02 -->
-            <section class="about-item-02">
-                <h2 class="about-item-02-title title">What my clients say about me and my work</h2>
-                <!-- slider -->
-                <div class="about-comments slider">
-                    <!-- slider item-01 -->
-                    <div class="about-comment slide-item show-slide">
-                        <blockquote>We are very pleased with our new brand identity and the way Enrique conducts his business. It has been a great experience working with him and it`s already certain that we will hire him again.</blockquote>
+            <div class="about-item-02">
+                <section class="container container-lg">
+                    <h2 class="title">What my clients say about me and my work</h2>
+                    <!-- slider -->
+                    <div class="about-comments slider">
+                        <!-- slider item-01 -->
+                        <div class="about-comment slide-item show-slide">
+                            <blockquote>We are very pleased with our new brand identity and the way Enrique conducts his business. It has been a great experience working with him and it`s already certain that we will hire him again.</blockquote>
+        
+                            <!-- profile -->
+                            <figure class="slider-profile">
+                                <img src="images/profile-girl.jpg" alt="girl" class="profile-img show-element">
     
-                        <!-- profile -->
-                        <figure class="profile">
-                            <img src="images/profile-girl.jpg" alt="girl" class="profile-img show-element">
-
-                            <figcaption>
-                                <cite class="profile-name">Sara Andrews</cite>
+                                <figcaption>
+                                    <cite class="profile-name">Sara Andrews</cite>
+                                
+                                    <p><span class="profile-profession">Designer</span> - <a href="">Sander Inc</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>
+        
+                        <!-- slider item-02 -->
+                        <div class="about-comment slide-item">
+                            <blockquote>Enrique is awesome to work with. Incredibly talented, easy to communicate with, responsive with next iterations, and beautiful work. Highly recommended!</blockquote>
+        
+                            <!-- profile -->
+                            <figure class="slider-profile">
+                                <img src="images/profile-boy.jpg" alt="Boy" class="profile-img show-element">
                             
-                                <p><span class="profile-profession">Designer</span> - <a href="">Sander Inc</a></p>
-                            </figcaption>
-                        </figure>
+                                <figcaption>
+                                    <cite class="profile-name">Frank Miller</cite>
+        
+                                    <p><span class="profile-profession">CEO</span> - <a href="">Millermedia</a></p>
+                                </figcaption>
+                            </figure>
+                        </div>  
+                        
+                        <!-- slider btns -->
+                        <button class="btn-prev icon-left"></button>
+    
+                        <button class="btn-next icon-right"></button>
                     </div>
     
-                    <!-- slider item-02 -->
-                    <div class="about-comment slide-item">
-                        <blockquote>Enrique is awesome to work with. Incredibly talented, easy to communicate with, responsive with next iterations, and beautiful work. Highly recommended!</blockquote>
+                    <div class="about-logos">
+                        <img src="images/dribbble.png" alt="dribbble" title="dribbble" class="logo"></img>
+                        <img src="images/enfold.png" alt="enfold" title="enfold" class="logo"></img>
+                        <img src="images/jquery.png" alt="jquery" title="jquery" class="logo"></img>
+                        <img src="images/microlancer.png" alt="microlancer" title="microlancer" class="logo"></img>
+                        <img src="images/wordpress.png" alt="wordpress" title="wordpress" class="logo"></img>
+                        <img src="images/wpml.png" alt="wpml" title="wpml" class="logo"></img>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- services -->
+        <div id="services" class="part">
+            <section class="container container-lg">
+                <h2 class="title subline">Here is a list of things I can do for you</h2>
+                <!-- services menu -->
+                <div class="services-menu">
+                    <!-- service item 01 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-brush"></div>
     
-                        <!-- profile -->
-                        <figure class="profile">
-                            <img src="images/profile-boy.jpg" alt="Boy" class="profile-img show-element">
+                        <section>
+                            <h3 class="services-title">web design</h3>
                         
-                            <figcaption>
-                                <cite class="profile-name">Frank Miller</cite>
+                            <p>Cras dapibus. Vivamus elem nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, port.</p>
+                        </section>
+                    </div>
+                    <!-- service item 02 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-tools"></div>
     
-                                <p><span class="profile-profession">CEO</span> - <a href="">Millermedia</a></p>
-                            </figcaption>
-                        </figure>
-                    </div>  
+                        <section>
+                            <h3 class="services-title">web development</h3>
+    
+                            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nut massa quis enim</p>
+                        </section>
+                    </div>
+                    <!-- service item 03 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-buoy"></div>
+    
+                        <section>  
+                            <h3 class="services-title"><span>24/7</span> support</h3>
+    
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene ligula eget dolor.</p>
+                        </section>
+                    </div>
+                    <!-- service item 04 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-search"></div>
+    
+                        <section>
+                            <h3 class="services-title">seo consulting</h3>
+    
+                            <p>Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        </section>
+                    </div>
+                    <!-- service item 05 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-facebook"></div>
+    
+                        <section>
+                            <h3 class="services-title">social media</h3>
                     
-                    <!-- slider btns -->
-                    <button class="btn-prev icon-left"></button>
-
-                    <button class="btn-next icon-right"></button>
-                </div>
-
-                <div class="about-item-02-logos">
-                    <div class="logo logo-01"></div>
-                    <div class="logo logo-02"></div>
-                    <div class="logo logo-03"></div>
-                    <div class="logo logo-04"></div>
-                    <div class="logo logo-05"></div>
-                    <div class="logo logo-06"></div>
+                            <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aeneart.</p>
+                        </section>
+                    </div>
+                    <!-- service item 06 -->
+                    <div class="services-item">
+                        <div class="services-icon icon-shopping"></div>
+    
+                        <section>
+                            <h3 class="services-title">e-commerce</h3>
+                    
+                            <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Cras dapibus.</p>
+                        </section>
+                    </div>
                 </div>
             </section>
         </div>
 
-        <!-- services -->
-        <section id="services" class="part">
-            <h2 class="services-title title">Here is a list of things I can do for you</h2>
-
-            <div class="services-menu">
-                <!-- service item 01 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-brush"></div>
-
-                    <section class="services-section">
-                        <h3 class="section-title">web design</h3>
-                    
-                        <p class="section-content">Cras dapibus. Vivamus elem nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, port.</p>
-                    </section>
-                </div>
-                <!-- service item 02 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-tools"></div>
-
-                    <section class="services-section">
-                        <h3 class="section-title">web development</h3>
-
-                        <p class="section-content">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nut massa quis enim</p>
-                    </section>
-                </div>
-                <!-- service item 03 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-buoy"></div>
-
-                    <section class="services-section">  
-                        <h3 class="section-title"><span>24/7</span> support</h3>
-
-                        <p class="section-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene ligula eget dolor.</p>
-                    </section>
-                </div>
-                <!-- service item 04 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-search"></div>
-
-                    <section class="services-section">
-                        <h3 class="section-title">seo consulting</h3>
-
-                        <p class="section-content">Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                    </section>
-                </div>
-                <!-- service item 05 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-facebook"></div>
-
-                    <section class="services-section">
-                        <h3 class="section-title">social media</h3>
-                
-                        <p class="section-content">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aeneart.</p>
-                    </section>
-                </div>
-                <!-- service item 06 -->
-                <div class="services-menu-item">
-                    <div class="services-icon icon-shopping"></div>
-
-                    <section class="services-section">
-                        <h3 class="section-title">e-commerce</h3>
-                
-                        <p class="section-content">Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Cras dapibus.</p>
-                    </section>
-                </div>
-            </div>
-        </section>
 
         <!-- contact -->
-        <section id="contact" class="contact part">
-            <h2 class="contact-title title">Do you like my work? Want to get in touch? Use the form below!
-            </h2>
-
-            <form action="">
-                <input type="text" class="form-item" placeholder="Name*" required>
-
-                <input type="email" class="form-item" placeholder="E-Mail*" required>
-
-                <textarea class="form-item" name="" id="" cols="30" rows="10" placeholder="Message*" required></textarea>
-
-                <input type="submit" class="form-item submit" value="Submit">
-            </form>
-        </section>   
+        <div id="contact" class="part">
+            <section class="container container-sm">
+                <h2 class="title subline">Do you like my work? Want to get in touch? Use the form below!
+                </h2>
+    
+                <form action="undefined">
+                    <input
+                    type="text"
+                    class="form-item"
+                    placeholder="Name*"
+                    required>
+    
+                    <input
+                    type="email"
+                    class="form-item"
+                    placeholder="E-Mail*"
+                    required>
+    
+                    <textarea
+                    class="form-item"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message*"
+                    required></textarea>
+    
+                    <input
+                    type="submit"
+                    class="form-item submit"
+                    value="Submit">
+                </form>
+            </section>
+        </div>
+           
 
         <!-- social media -->
-        <section class="social-media">
-            <h2 class="social-media-title title">Or follow me on Dribbble, Facebook or Twitter</h2>
-
-            <div class="social-media-icons">         
-                <a href="https://m.facebook.com" class="social-media-icon icon-facebook show-element" target="_blank"></a>
-                <a href="https://dribbble.com" class="social-media-icon icon-dribbble show-element" target="_blank"></a>
-                <a href="https://www.Twitter.com" class="social-media-icon icon-twitter show-element" target="_blank"></a>
-            </div>
-        </section>
+        <div class="social-media">
+            <section class="container container-sm">
+                <h2 class="title">Or follow me on Dribbble, Facebook or Twitter</h2>
+    
+                <nav class="social-icons">         
+                    <a href="https://m.facebook.com" class="social-icon icon-facebook show-element" target="_blank"></a>
+                    <a href="https://dribbble.com" class="social-icon icon-dribbble show-element" target="_blank"></a>
+                    <a href="https://www.Twitter.com" class="social-icon icon-twitter show-element" target="_blank"></a>
+                </nav>
+            </section>
+        </div>
     </main>
 
     <!-- footer -->
@@ -286,7 +316,7 @@
             <a href="https://kriesi.at/Privacy-Policy" target="_blank">Privacy Policy</a>
         </nav>
         <!-- footer social media -->
-        <div class="footer-social-media-icons">
+        <div class="footer-social-icons">
             <a href="https://www.Twitter.com" class="footer-icon icon-twitter" target="_blank"></a>
             <a href="https://m.facebook.com" class="footer-icon icon-facebook" target="_blank"></a>
             <a href="https://dribbble.com" class="footer-icon icon-dribbble" target="_blank"></a>

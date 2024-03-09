@@ -1,12 +1,12 @@
 // selects
 // site loader
 const siteLoaderEl = document.querySelector('.site-loader');
-const homeContainer = document.querySelector('.hero-container');
+const homeContainer = document.querySelector('.hero .container');
 // header slide
 const headerEl = document.querySelector('.header');
 const homeEl = document.querySelector('.hero');
 // menu item light
-const menuItemsLink = document.querySelectorAll('.menu-item-link');
+const menuItemsLink = document.querySelectorAll('.menu-link');
 const parts = document.querySelectorAll('.part');
 // show menu
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
@@ -17,7 +17,7 @@ const galleryImages = document.querySelectorAll('.gallery-item-img');
 const showElements = document.querySelectorAll('.show-element');
 // inform contour
 const informEl = document.querySelector('.inform-item');
-const informNumEls = document.querySelectorAll('.inform-item-number');
+const informNumEls = document.querySelectorAll('.inform-number');
 // slider
 const slideItems = document.querySelectorAll('.slide-item');
 const nextBtn = document.querySelector('.btn-next');
@@ -35,7 +35,7 @@ document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         siteLoaderEl.style.opacity = '0';
         siteLoaderEl.style.visibility = 'hidden';
-        homeContainer.style.display = 'block';
+        homeContainer.style.display = 'flex';
     }
 };
 
