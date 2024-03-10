@@ -22,10 +22,13 @@ const informNumEls = document.querySelectorAll('.inform-number');
 const slideItems = document.querySelectorAll('.slide-item');
 const nextBtn = document.querySelector('.btn-next');
 const prevBtn = document.querySelector('.btn-prev');
+// // bg attachment
+const bgEl = document.querySelector('.bg-attachment');
 // form
 const formEl = document.querySelector('form');
 const formItems = document.querySelectorAll('.form-item:not(.submit)');
 const formSubmit = document.querySelector('.submit');
+const messageEl = document.querySelector('.form-message')
 // scroll up
 const scrollUpEl = document.querySelector('.scroll-up');
 
@@ -212,7 +215,29 @@ prevBtn.addEventListener('click' , () => {
     }
     setItem();
 });
-
+// bg attachment
+const extrusion = (bgEl.offsetHeight - bgEl.parentElement.offsetHeight) - 5;
+let num = 0;
+let scrollPrimary = window.scrollY;
+window.addEventListener('scroll',() => {
+    const scrollSecondary = window.scrollY;
+    if (bgEl.parentElement.getBoundingClientRect().top < window.innerHeight && bgEl.parentElement.getBoundingClientRect().bottom > 0) {
+        if (scrollPrimary <= scrollSecondary) {
+            num--;
+            if (num < -extrusion) {
+                num = -extrusion;
+            }
+        }
+        if (scrollPrimary >= scrollSecondary) {
+            num++;
+            if (num >= 0) {
+                num = 0;
+            }
+        }
+    }
+    bgEl.style.transform=`translateY(${num}px)`;
+    scrollPrimary = window.scrollY;
+});
 // form
 // form valid
 for (const formItem of formItems) {
@@ -243,6 +268,10 @@ formEl.addEventListener('submit',(e)=>{
     setTimeout(() => {
         formEl.style.height = '0px';
     }, 1000);
+    setTimeout(() => {
+        messageEl.style.visibility = 'visible';
+        messageEl.style.opacity = '1';
+    }, 1500);
 });
 
 // scroll up
