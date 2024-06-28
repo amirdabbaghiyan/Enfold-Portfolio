@@ -102,8 +102,35 @@ window.addEventListener('resize' , () => {
 });
 
 // menu item target
+let executed = false;
 window.addEventListener('scroll' , () => {
     for (const part of parts) {
+        if (parts[0].getBoundingClientRect().bottom + 100 < parts[0].offsetHeight) {
+            // console.log('oo')
+            // parts[1].scrollHeight = 0
+            if (executed) return;
+            window.scroll({ top: 1000, left: 0, behavior: "smooth" });
+            executed = true;
+            // window.scrollBy(0, 1000)
+            // parts[1].scrollTop = 1500
+        }
+
+        // console.dir(document.body)
+        // console.log(parts[0].offsetHeight)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         if (part.getBoundingClientRect().top - headerEl.offsetHeight <= 0) {
             for (const item of menuItemsLink) {
                 if (item.getAttribute('href').includes(part.id)) {
